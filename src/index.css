@@ -1,0 +1,36 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body, html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #efefef;
+  font-size: 24px;
+}
+
+#root {
+	height: 100vh;
+	width: 100vw;
+	overflow: none;
+}
+
+button {
+	padding: 4px 8px;
+	font-size: 24px;
+}
+
+input {
+	outline: none;
+	font-size: 24px;
+}
+
+select {
+	outline: none;
+	font-size: 16px;
+	padding: 4px 8px;
+}
