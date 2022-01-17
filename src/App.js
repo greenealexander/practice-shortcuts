@@ -109,9 +109,13 @@ function App() {
 				correctCommandPressed={correctCommandPressed}
 				onNextPressed={() => {
 					let nextCommand = getRandomInt(shortcuts.length);
-					while (nextCommand === selectedCommand) {
-						nextCommand = getRandomInt(shortcuts.length);
+
+					if (shortcuts.length > 1) {
+						while (nextCommand === selectedCommand) {
+							nextCommand = getRandomInt(shortcuts.length);
+						}
 					}
+
 					setSelectedCommand(nextCommand);
 					setCorrectCommandPressed(null);
 					setShowAnswer(false);
